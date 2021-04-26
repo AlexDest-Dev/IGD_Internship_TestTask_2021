@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cube;
+using Player;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -16,7 +17,7 @@ public class CubeStacker : MonoBehaviour
     {
         _pool = FindObjectOfType<ObjectPool>();
         _stack = new List<GameObject>();
-        _player = GameObject.FindWithTag("Player");
+        _player = FindObjectOfType<PlayerAnimationController>().gameObject;
         
         EventBroker.StackableCubeTriggered += AddStackableCube;
         EventBroker.StackableCubeInvisible += CheckIfStacked;

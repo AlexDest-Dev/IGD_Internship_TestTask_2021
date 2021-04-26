@@ -38,15 +38,7 @@ namespace Player
             
                 if (_touch.phase == TouchPhase.Moved)
                 {
-                    float changeX = _touch.deltaPosition.x - _width;
-                    if (changeX > 0)
-                    {
-                        direction = -1f;
-                    }
-                    else
-                    {
-                        direction = 1f;
-                    }
+                    direction = 1f;
                 }
             }
             return direction * _touch.deltaPosition.x;
