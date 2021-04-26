@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cube;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
@@ -40,10 +41,10 @@ public class ObjectPool : MonoBehaviour
         {
             if (obj != null)
             {
-                CubeController cubeController = obj.GetComponent<CubeController>();
-                if (cubeController != null)
+                StackableCube stackableCube = obj.GetComponent<StackableCube>();
+                if (stackableCube != null)
                 {
-                    cubeController.IsActive = false;
+                    stackableCube.IsActive = false;
                 }
 
                 BoxCollider boxCollider = obj.GetComponent<BoxCollider>();

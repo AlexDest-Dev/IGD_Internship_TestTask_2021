@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cube;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -32,7 +33,7 @@ public class CubeStacker : MonoBehaviour
         {
             _stack.Add(cube);
             
-            CubeController controller = cube.GetComponent<CubeController>();
+            StackableCube controller = cube.GetComponent<StackableCube>();
             cubeSize = controller.CubeSize;
             controller.IsActive = true;
             
@@ -52,7 +53,7 @@ public class CubeStacker : MonoBehaviour
 
     private void CheckIfStacked(GameObject obj)
     {
-        if (_stack.Contains(obj) && obj.TryGetComponent(out CubeController controller))
+        if (_stack.Contains(obj) && obj.TryGetComponent(out StackableCube controller))
         {
             RemoveCube(obj);
         }

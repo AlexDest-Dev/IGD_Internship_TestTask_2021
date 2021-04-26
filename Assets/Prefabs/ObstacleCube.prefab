@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7558938637823378694}
   - component: {fileID: 7558938637823378693}
   - component: {fileID: 7558938637823378692}
-  - component: {fileID: 2645743411511380327}
+  - component: {fileID: 5220941184137992818}
   m_Layer: 0
   m_Name: ObstacleCube
   m_TagString: Obstacle
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.37746316, z: 1}
   m_Center: {x: 0, y: -0.31126842, z: 0}
---- !u!114 &2645743411511380327
+--- !u!114 &5220941184137992818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7558938637823378691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981d0aac1d8c82a4db489157fa967e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 87393bf2ed7ca8b45b6b9664d2dbc59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isObstacle: 1
